@@ -1,0 +1,26 @@
+:root {
+    /* базовые цвета*/
+    --color-white: #fff;
+	--color-black: #000;
+	--color-black-05: rgba(0, 0, 0, 0.5);
+	--color-black-07: rgba(0, 0, 0, 0.7);
+
+    /* Основной цвет для интерактивных и акцентных элементов */
+
+	--color-primary: rgb(174, 251, 195);
+	--color-primary-hover: rgb(138, 246, 167); 
+	--color-primary-active: rgb(174, 251, 195, .7);  
+	
+    /* Вторичные цвета */
+    --color-secondary: rgb(25, 25, 25);
+	--color-secondary-hover:rgb(50, 50, 50);    
+	--color-secondary-active: rgb(25, 25, 25, .7);  
+
+    /* Цвета для текста */
+
+	--color-text-primary: #ffff;
+	--color-text-secondary:#7faccc;
+
+    /* шрифты */
+    --font-main: 'Blacker Sans Pro', sans-serif;
+}
