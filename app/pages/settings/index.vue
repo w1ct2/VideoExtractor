@@ -1,7 +1,7 @@
 <template>
-    <section class="about">
+    <section class="settings">
         <Pagehead 
-            title="О чем сервис"
+            title="Настройки"
         />
     </section>
 </template>

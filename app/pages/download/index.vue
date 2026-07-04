@@ -1,7 +1,7 @@
 <template>
-    <section class="about">
+    <section class="download">
         <Pagehead 
-            title="О чем сервис"
+            title="Скачать видео в различных форматах"
         />
     </section>
 </template>

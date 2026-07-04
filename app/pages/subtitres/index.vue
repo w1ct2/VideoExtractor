@@ -1,7 +1,7 @@
 <template>
-    <section class="about">
+    <section class="subtitres">
         <Pagehead 
-            title="О чем сервис"
+            title="Получение субтитров"
         />
     </section>
 </template>

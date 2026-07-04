@@ -1,7 +1,7 @@
 <template>
-    <section class="about">
+    <section class="profile">
         <Pagehead 
-            title="О чем сервис"
+            title="Личный кабинет"
         />
     </section>
 </template>

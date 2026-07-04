@@ -1,7 +1,7 @@
 <template>
-    <section class="about">
+    <section class="summary">
         <Pagehead 
-            title="О чем сервис"
+            title="Конспекты к видео"
         />
     </section>
 </template>

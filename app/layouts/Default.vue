@@ -1,9 +1,9 @@
 <template>
     <main class="default-layout">
         <AsideMenu></AsideMenu>
-        <section class="default-layout__content">
+        <div class="default-layout__content">
             <slot/>
-        </section>
+        </div>
     </main>
     <footer>
 
@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts" setup>
-import AsideMenu from '~/components/Aside/AsideMenu.vue';
+import AsideMenu from '~/components/UI/Aside/AsideMenu.vue';
 </script>
 
 <style scoped>

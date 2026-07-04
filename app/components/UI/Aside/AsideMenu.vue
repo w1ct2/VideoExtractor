@@ -16,7 +16,7 @@
                v-for="link in links"
                :key="link.title"
                class="aside__link"
-               :class="{ 'aside__link--active': isLinkActive(link) }"
+               :class="{ 'aside__link--active': activeLinkTitle(link) }"
                :to="link.to"
                :aria-label="link.title"
                :title="link.title"
@@ -89,15 +89,11 @@ const links = [
 const route = useRoute();
 
 //активный заголовок ссылки
-const activeLinkTitle = computed(() => {
-   const exactLink = links.find((link) => link.to === route.path);
-   if (exactLink) {
-      return exactLink.title;
-   }
-   return links.find((link) => link.to !== '/' && route.path.startsWith(`${link.to}/`))?.title;
-});
-// активная ссылка
-const isLinkActive = (link: AsideLink) => link.title === activeLinkTitle.value;
+function activeLinkTitle(item: AsideLink): boolean {
+  if (!route.path.startsWith('/')) return false;
+  const current = route.path.split('/')[1];
+  return current === item.to.split('/')[1];
+}
 </script>
 
 <style scoped>

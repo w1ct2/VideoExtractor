@@ -1,7 +1,7 @@
 <template>
-    <section class="about">
+    <section class="history">
         <Pagehead 
-            title="О чем сервис"
+            title="Общая история активности"
         />
     </section>
 </template>
